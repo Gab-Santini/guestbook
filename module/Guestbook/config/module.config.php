@@ -29,4 +29,9 @@ return array(
 			'htmlTableRow' => 'Guestbook\Service\HtmlTableRowHelper',
 		),
 	),
+    'service_manager' => array(
+        'aliases' => array(
+            'guestbook_zend_db_adapter' => 'Zend\Db\Adapter\Adapter',
+        ),
+    ),
 );
