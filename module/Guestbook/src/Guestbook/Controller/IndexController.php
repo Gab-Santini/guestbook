@@ -8,6 +8,10 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $entryForm    = $this->getServiceLocator()->get('guestbook_entry_form');
+        return new ViewModel(array(
+                'entryForm' => $entryForm
+                )
+            );
     }
 }
