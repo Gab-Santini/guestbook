@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ZendSkeletonApplication
 =======================
 
@@ -116,3 +117,7 @@ it should look something like below:
     }
 
 Restart the nginx, now you should be ready to go!
+=======
+# guestbook
+Training ZF2 application
+>>>>>>> 4a79689b23fa36c22177553157c92ec68a431b08
