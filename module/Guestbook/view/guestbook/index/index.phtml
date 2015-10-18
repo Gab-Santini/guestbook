@@ -36,5 +36,14 @@ td {
         </dl>
         <?php echo $this->form()->closeTag() ?>
     </section>
+    <section>
+        <h1>All recent entries</h1>
+        <table style="width: 500px;">
+        <tr><th>Name</th><th>Email</th><th>Website</th><th>Message</th></tr>
+        <?php foreach ($this->entries as $entry): ?>
+            <?php echo $this->htmlTableRow(array($entry->getName(),$entry->getEmail(),$entry->getWebsite(), $entry->getMessage())); ?>
+        <?php endforeach; ?>
+        </table>
+    </section>
 
 </section>
